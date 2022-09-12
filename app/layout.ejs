@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>NFT藝術家交易平台</title>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -13,13 +18,15 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg border-bottom border-dark p-0 mb-6">
+    <nav class="navbar navbar-expand-lg border-bottom p-0 mb-6">
       <div class="container-xxl">
         <a class="navbar-brand py-5" href="index.html"
-          ><img src="./assets/images/logo.svg" alt="LOGO"
+          ><img src="./assets/images/logo.svg" alt="LOGO" class="w-50 w-md-75 w-lg-100"
         /></a>
+        <div>
+        <a href="#" class="d-inline-block d-lg-none"><i class="fa-solid fa-magnifying-glass fa-xl text-dark"></i></a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler p-0 ms-4"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -29,9 +36,10 @@
         >
           <i class="fa-solid fa-bars fa-lg"></i>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      </div>
+        <div class="collapse navbar-collapse bg-light bg-lg-secondary" id="navbarSupportedContent">
           <form
-            class="d-flex ms-auto px-lg-6 py-lg-5 border-start w-50 border-start border-dark"
+            class="d-flex ms-auto px-lg-6 py-lg-5 border-start-lg w-50 border-start-lg d-none d-lg-flex"
             role="search"
           >
             <input
@@ -50,7 +58,7 @@
           <ul class="navbar-nav mb-2 mb-lg-0 fw-bold">
             <li class="nav-item">
               <a
-                class="nav-link px-7 py-lg-6 border-start border-dark btn btn-outline-primary border-0"
+                class="nav-link px-lg-7 py-lg-6 fs-lg-5 fw-bold py-4 border-start-lg btn btn-outline-primary border-0 border-bottom border-bottom-lg-0"
                 aria-current="page"
                 href="explore_series.html"
                 >探索</a
@@ -58,14 +66,19 @@
             </li>
             <li class="nav-item">
               <a
-                class="nav-link px-7 py-lg-6 btn btn-outline-primary border-start border-dark border-0"
+                class="nav-link px-lg-7 py-lg-6 fs-lg-5 fw-bold py-4 btn btn-outline-primary border-start-lg border-0"
                 href="#"
                 >市值</a
               >
             </li>
-            <li class="nav-item border-start border-dark text-dark">
-              <a class="nav-link py-lg-6 ps-7 text-dark" href="#"
+            <li class="nav-item border-start-lg text-dark">
+              <a
+                class="nav-link py-lg-6 ps-7 text-dark d-none d-lg-inline-block"
+                href="#"
                 ><i class="fa-solid fa-wallet fa-xl"></i
+              ></a>
+              <a class="nav-link btn-primary d-block d-lg-none text-center borders py-3 fw-normal" href="#"
+                >連結錢包</i
               ></a>
             </li>
           </ul>
@@ -80,8 +93,7 @@
         <p class="text-center">© ART NFT. All Rights Reserved</p>
       </div>
     </footer>
-
-    <script src="./assets/js/vendors.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
 </html>
