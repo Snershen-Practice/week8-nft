@@ -6,6 +6,8 @@
 @import "../../../node_modules/bootstrap/scss/functions";
 @import "./helpers/variables";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
+@import "../style/base/base";
 @import "../style/vendor/vendor";
+@import "../style/component/component";
 @import "./component/utilities";
 @import "./layout/index.scss";

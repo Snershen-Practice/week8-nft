@@ -1,0 +1,14 @@
+body {
+  font-size: 1rem;
+}
+
+a {
+  display: inline-block;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+img {
+  object-fit: cover;
+}

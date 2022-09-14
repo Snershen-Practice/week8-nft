@@ -1,5 +1,90 @@
-.index__h1 {
-  color:#00cc99;
-  font-size: 20px;
-  font-weight: 400;
+.ranking {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.artist-img {
+  object-fit: cover !important;
+  width: 300px;
+  height: 300px;
+}
+
+.ranking-img {
+  height: 375px;
+  object-fit: cover;
+  object-position: top;
+  @media (max-width: 992px) {
+    height: 100px;
+    width: 100px;
+  }
+}
+.ranking-img2 {
+  height: 96px;
+  width: 96px;
+  flex-shrink: 0;
+  object-fit: cover;
+  object-position: top;
+}
+
+.card-info {
+  opacity: 0;
+}
+
+.card:hover .card-info {
+  opacity: 1;
+  color: $light;
+  padding: 32px;
+  background: rgba($dark, 0.5);
+  border: solid 24px $light;
+  outline: inset 1px 1px $light;
+  position: relative;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(0.9);
+    border: solid 1px $light;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.series-work {
+  position: relative;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+  }
+  &::before {
+    border-bottom: solid 12px transparent;
+    border-right: solid 12px transparent;
+    border-left: solid 12px $dark;
+    border-top: solid 12px $dark;
+    left: 0;
+  }
+  &::after {
+    border-bottom: solid 12px transparent;
+    border-left: solid 12px transparent;
+    border-right: solid 12px $dark;
+    border-top: solid 12px $dark;
+    right: 0;
+  }
+}
+
+.series-work-item {
+  height: 260px;
+}
+
+.banner-img {
+  height: 100%;
+  @media (min-width: 320px) {
+    height: 375px;
+  }
 }

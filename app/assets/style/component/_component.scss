@@ -1,0 +1,60 @@
+.my-btn-noBorder-primary {
+  color: $dark;
+  position: relative;
+  &::after {
+    content: "";
+    border-right: 8px solid $primary;
+    border-bottom: 8px solid $primary;
+    border-left: 8px solid transparent;
+    border-top: 8px solid transparent;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  &:hover {
+    border: solid 1px $dark;
+    background: $primary;
+    color: $light;
+  }
+  &:hover::after {
+    content: "";
+    border-right: 8px solid $dark;
+    border-bottom: 8px solid $dark;
+    border-left: 8px solid transparent;
+    border-top: 8px solid transparent;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.my-btn-outline-primary {
+  border: solid 1px $dark;
+  background: $light;
+  color: $dark;
+  position: relative;
+  &::after {
+    content: "";
+    border-right: 8px solid $primary;
+    border-bottom: 8px solid $primary;
+    border-left: 8px solid transparent;
+    border-top: 8px solid transparent;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  &:hover {
+    background: $primary;
+    color: $light;
+  }
+  &:hover::after {
+    content: "";
+    border-right: 8px solid $dark;
+    border-bottom: 8px solid $dark;
+    border-left: 8px solid transparent;
+    border-top: 8px solid transparent;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
