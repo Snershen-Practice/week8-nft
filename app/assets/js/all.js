@@ -1,5 +1,4 @@
 //swiper
-
 var swiper = new Swiper(".mySwiper", {
   effect: "coverflow",
   grabCursor: true,
@@ -7,7 +6,7 @@ var swiper = new Swiper(".mySwiper", {
 
   // centeredSlidesBounds: true,
   autoplay: {
-    delay: 2000,
+    delay: 4000,
   },
   slidesPerView: "auto",
   coverflowEffect: {
@@ -31,7 +30,7 @@ var swiper = new Swiper(".mySwiper", {
     },
     // when window width is >= 640px
     992: {
-      slidesPerView: 2.8,
+      slidesPerView: 2.83,
     },
   },
 });
