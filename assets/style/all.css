@@ -67,7 +67,7 @@ hr:not([size]) {
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
   font-weight: 500;
   line-height: 1.2;
 }
@@ -116,7 +116,7 @@ h6, .h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 abbr[title],
@@ -13594,6 +13594,23 @@ fieldset:disabled .btn {
   }
 }
 
+body {
+  font-size: 1rem;
+}
+
+a {
+  display: inline-block;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 html,
 body {
   position: relative;
@@ -13632,6 +13649,73 @@ body {
   width: 16px;
   height: 8px;
   background: #e6553b;
+}
+
+.my-btn-noBorder-primary {
+  color: #000;
+  position: relative;
+}
+
+.my-btn-noBorder-primary::after {
+  content: "";
+  border-right: 8px solid #e6553b;
+  border-bottom: 8px solid #e6553b;
+  border-left: 8px solid transparent;
+  border-top: 8px solid transparent;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.my-btn-noBorder-primary:hover {
+  border: solid 1px #000;
+  background: #e6553b;
+  color: #fff;
+}
+
+.my-btn-noBorder-primary:hover::after {
+  content: "";
+  border-right: 8px solid #000;
+  border-bottom: 8px solid #000;
+  border-left: 8px solid transparent;
+  border-top: 8px solid transparent;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.my-btn-outline-primary {
+  border: solid 1px #000;
+  background: #fff;
+  color: #000;
+  position: relative;
+}
+
+.my-btn-outline-primary::after {
+  content: "";
+  border-right: 8px solid #e6553b;
+  border-bottom: 8px solid #e6553b;
+  border-left: 8px solid transparent;
+  border-top: 8px solid transparent;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.my-btn-outline-primary:hover {
+  background: #e6553b;
+  color: #fff;
+}
+
+.my-btn-outline-primary:hover::after {
+  content: "";
+  border-right: 8px solid #000;
+  border-bottom: 8px solid #000;
+  border-left: 8px solid transparent;
+  border-top: 8px solid transparent;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .btn-primary {
@@ -13699,6 +13783,19 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6,
 p {
   padding: 0;
   margin: 0;
+}
+
+.mb-minus-1 {
+  margin-bottom: -1px;
+}
+
+.overflowX {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.overflowX::-webkit-scrollbar {
+  display: none;
 }
 
 .ranking {
@@ -13814,94 +13911,6 @@ p {
   .banner-img {
     height: 375px;
   }
-}
-
-.my-btn-outline-primary {
-  border: solid 1px #000;
-  background: #fff;
-  color: #000;
-  position: relative;
-}
-
-.my-btn-outline-primary::after {
-  content: "";
-  border-right: 8px solid #e6553b;
-  border-bottom: 8px solid #e6553b;
-  border-left: 8px solid transparent;
-  border-top: 8px solid transparent;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
-.my-btn-outline-primary:hover {
-  background: #e6553b;
-  color: #fff;
-}
-
-.my-btn-outline-primary:hover::after {
-  content: "";
-  border-right: 8px solid #000;
-  border-bottom: 8px solid #000;
-  border-left: 8px solid transparent;
-  border-top: 8px solid transparent;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
-.my-btn-noBorder-primary {
-  color: #000;
-  position: relative;
-}
-
-.my-btn-noBorder-primary::after {
-  content: "";
-  border-right: 8px solid #e6553b;
-  border-bottom: 8px solid #e6553b;
-  border-left: 8px solid transparent;
-  border-top: 8px solid transparent;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
-.my-btn-noBorder-primary:hover {
-  border: solid 1px #000;
-  background: #e6553b;
-  color: #fff;
-}
-
-.my-btn-noBorder-primary:hover::after {
-  content: "";
-  border-right: 8px solid #000;
-  border-bottom: 8px solid #000;
-  border-left: 8px solid transparent;
-  border-top: 8px solid transparent;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
-.mb-minus-1 {
-  margin-bottom: -1px;
-}
-
-.overflow-x {
-  overflow-y: hidden;
-  overflow-x: scroll;
-  scrollbar-width: none;
-}
-
-.overflow-x::-webkit-scrollbar {
-  display: none;
-  /* Chrome Safari */
-}
-
-.index__h1 {
-  color: #00cc99;
-  font-size: 20px;
-  font-weight: 400;
 }
 
 /*# sourceMappingURL=all.css.map */
